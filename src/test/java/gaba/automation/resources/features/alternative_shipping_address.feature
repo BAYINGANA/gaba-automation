@@ -17,7 +17,7 @@ Feature: Alternative Shipping Address
         Then the System should hide the "Ship to different address form"
 
     @positive
-    @Scenario Outline: System to accept different shipping address with valid information
+    Scenario Outline: System to accept different shipping address with valid information
         Given the Customer has completed the Billing details
         When the Customer check the "Ship to different address" checkbox
         When the Customer enters "<first_name>" in First Name field
@@ -38,7 +38,7 @@ Feature: Alternative Shipping Address
 
 
     @negative
-    @Scenario Scenario Outline : System to Reject different shipping address with invalid information
+    Scenario Outline: System to Reject different shipping address with invalid information
         Given the Customer has completed the Billing details
         When the Customer check the "Ship to different address" checkbox
         When the Customer enters "<first_name>" in First Name field
