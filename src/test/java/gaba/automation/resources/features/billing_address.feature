@@ -2,7 +2,7 @@ Feature: Billing Address
 
   Background:
     Given the customer is logged in
-    And the customer is on the "Billing address" page
+    And the customer is on the "Addresses" page
     And the customer clicks on "Edit" button of the Billing address section
 
   @positive

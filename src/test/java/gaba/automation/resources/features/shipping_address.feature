@@ -3,7 +3,7 @@ Feature: Shipping Address
 
   Background:
     Given the customer is logged in
-    And the customer is on the "Address" page
+    And the customer is on the "Addresses" page
     And the customer clicks on "Edit" button of the Shipping address section
 
 
@@ -38,7 +38,7 @@ Feature: Shipping Address
 
     Examples:
       | firstName | lastName | country | streetAddress | city   | errorMessage                                 |
-      |           | Moukala  | Rwanda  | KN 45 Ave     | Kigali | Shipping First name is a required field.     |
-      | Georges   |          | Rwanda  | KN 45 Ave     | Kigali | Shipping Last name is a required field.      |
-      | Georges   | Moukala  | Rwanda  |               | Kigali | Shipping Street address is a required field. |
-      | Georges   | Moukala  | Rwanda  | KN 45 Ave     |        | Shipping Town / City is a required field.    |
+      |           | Moukala  | Rwanda  | KN 45 Ave     | Kigali | First name is a required field.     |
+      | Georges   |          | Rwanda  | KN 45 Ave     | Kigali | Last name is a required field.      |
+      | Georges   | Moukala  | Rwanda  |               | Kigali | Street address is a required field. |
+      | Georges   | Moukala  | Rwanda  | KN 45 Ave     |        | Town / City is a required field.    |
